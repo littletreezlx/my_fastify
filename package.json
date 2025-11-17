@@ -1,0 +1,26 @@
+{
+  "name": "my-fastify",
+  "version": "1.0.0",
+  "description": "Simple Fastify server for feature testing",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["fastify", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^4.28.1",
+    "fastify-plugin": "^4.5.1",
+    "@fastify/cors": "^9.0.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "tsx": "^4.15.0"
+  }
+}
